@@ -1,0 +1,357 @@
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Prata', serif; */
+
+/* Variables */
+:root{
+    --poppins: 'Poppins', sans-serif;
+    --prata: 'Prata', serif;
+    --open: 'Open Sans', sans-serif;
+    --btn: #FFBA60;
+    --btn-secondary: #f0a849;
+    --colum: rgba(255,186,96,.6);
+    --columnsecon: #26333a;
+    --color-banner: rgba(22, 22, 22, 0.808);
+    --background: #F7F7F7;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.row{
+    margin: 0;
+}
+
+/* ============================================= MAIN BANNER */
+.main_banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 0 5rem;
+    background: var(--color-banner);
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+    height: 100vh;
+}
+.main_banner-image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    opacity: .2;
+}
+.main_banner-content{
+    position: relative;
+}
+.main_banner-title{
+    font-family: var(--prata);
+    font-size: 4em;
+    margin: 0;
+}
+.main_banner-description{
+    font-family: var(--prata);
+    font-size: 1em;
+    margin-bottom: 2rem;
+}
+.main_banner_content-parrafo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-family: var(--open);
+}
+.main_banner-parrafo-icon{
+    font-size: .5em;
+    margin: 0 1rem;
+}
+.main_banner-boton{
+    background: var(--btn);
+    margin-top: 1rem;
+    transition: .5s;
+}
+.main_banner-boton:hover{
+    background: var(--btn-secondary);
+}
+.main_banner_boton-link{
+    text-decoration: none;
+    color: black;
+    font-family: var(--open);
+    font-size: 1em;
+    font-weight: 600;
+}
+.main_banner_boton-link:hover{
+    text-decoration: none;
+    color: black;
+}
+
+/* ========================================= Frase content */
+.frase_content{
+    width: 100%;
+    height: 100%;
+}
+.frase_row{
+    width: 100%;
+    margin: 0;
+    height: 500px;
+}
+.contenido{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5rem;
+}
+.lateral{
+    background: var(--colum);
+}
+.main_content_icon{
+    width: 2rem;
+    height: 10rem;
+    background: var(--columnsecon);
+}
+.frase_content-text{
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--prata);
+}
+.main_content-frase{
+    margin-bottom: 2rem;
+}
+.main_content-autor{
+    color: var(--btn);
+    text-transform: uppercase;
+}
+/* ======================================== lascano */
+.lascano{
+    width: 100%;
+    height: 100%;
+    background: #F7F7F7;
+}
+
+.lascano_row{
+    width: 100%;
+    margin:0;
+    height: auto;
+}
+.content_lascano{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.content_title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem 0 2rem 0;
+    font-family: var(--prata);
+    font-size: 2em;
+}
+.lascano_subtitle{
+    min-width: 50px;
+    min-height: 3px;
+    background: var(--btn);
+}
+.lateral_bis{
+    background: greenyellow;
+}
+.lascano_colum_image{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.lascano_content-image{
+    width: 400px;
+    height: 400px;
+    border: 10px solid #ffffff;
+}
+.lascano_image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.lascano_content-text{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.lascano_container-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+}
+.lascano_content-description{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.lascano_description{
+    text-align: left;
+    font-family: var(--open);
+    font-size: 1em;
+    line-height: 30px;
+    margin-bottom: 2rem;
+}
+
+.lascano_btn{
+    border: 2px solid var(--btn);
+    background: none;
+}
+.lascano_link{
+    text-decoration: none;
+    color: black;
+    font-family: var(--open);
+    font-size: 1em;
+    font-weight: 600;
+}
+.lascano_link:hover{
+    text-decoration: none;
+    color: black;    
+}
+.lateral_bis{
+    background: var(--btn);
+}
+
+/* ===================================== Services */
+
+.services{
+    width: 100%;
+    height: auto;
+    margin: 6rem 0;
+}
+.services_row{
+    width: 100%;
+    margin: 0;
+    height: auto;
+}
+
+.services_content-card{
+    margin: 2rem 0;
+}
+.services_btn{
+    background: var(--btn);
+}
+.services_content-icon{
+    text-align: center;
+    padding-top: 1rem;
+}
+.services_icon{
+    font-size: 3em;
+    color: var(--btn);
+    border: 1px solid #f7f7f7;
+    background: #f7f7f7;
+    border-radius: 50%;
+    padding: 1rem;
+}
+
+/* ====================================  CALL TO ACTION */
+
+.call_title{
+    font-family: var(--open);
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+.call_description{
+    font-family: var(--open);
+    font-size: 1.2em;
+    font-weight: 500;
+    text-align: left;
+}
+.call_link{
+    color: #ffffff;
+    font-family: var(--open);
+    font-size: 1em;
+    text-decoration: none;
+}
+.lascano_btn:hover{
+    background: var(--btn);
+}
+.call_link:hover{
+    text-decoration: none;
+    color: #ffffff;
+   
+}
+
+/* ============================================== MAPA */
+
+.map{
+    background: #f7f7f7;
+
+}
+.map_content{
+    margin: 2rem;
+}
+.mapWrapper{
+    position: relative;
+    padding-bottom: 66.6666667%;
+    height: 0;
+}
+.mapWrapper iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* ============================================ Footer */
+
+.footer{
+    background: var(--columnsecon);
+    width: 100%;
+    height: auto;
+}
+.footer_content{
+    width: 100%;
+   padding: 1rem;
+}
+.footer_data{
+    color: #fff;
+    font-family: var(--open);
+    font-size: 1em;
+}
+
+/* ===========================================================  MEDIA QUERIES */
+
+@media screen and (max-width: 600px){
+    .lascano_row{
+        justify-content: center;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .contenido{
+        padding: 1rem;
+    }
+    .main_content-frase{
+        font-size: 1.2em;
+    }
+    .jumbo_title{
+        font-size: 2rem;
+    }
+    .content_title{
+        margin: 3.5rem 0 2rem 0;
+    }
+    .map_content{
+        margin: 2rem 0;
+        padding-bottom: 0;
+    }
+}
