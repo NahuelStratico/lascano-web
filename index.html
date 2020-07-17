@@ -18,37 +18,39 @@
 </head>
 <body>
     <!-- Header navbar and banner -->
-    <header class="header" id="home">
-       
+    <header class="header" id="home">      
+
+        <!-- Navbar mobile -->
+        <div class="navbar_mobile">
+            <img src="img/hamburger.svg" alt="" class="hamburger">
+            <nav class="menu-navegacion">
+                <a href="#home">Home</a>
+                <a href="#lascano">Dra. Lascano</a>
+                <a href="#services">Servicios</a>
+                <a href="#contacto">Contacto</a>
+                <a href="https://www.instagram.com/lascano.estudiojuridico/?hl=es-la" target="blank">
+                    <i class="fab fa-instagram icon_instagram"></i>
+                </a>
+            </nav>
+        </div>
+            
+
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light header_navbar">
-            <div class="container">
-                <a class="navbar-brand" href="#">LOGO</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link navbar_link" href="#home">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link navbar_link" href="#lascano">Dra. Lascano</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link navbar_link" href="#">Servicios</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link navbar_link" href="#">Contacto</a>
-                        </li>
-                    </ul>
-                </div>
+        <nav class="header_navbar">
+            <div class="container navbar_container">
+                <a href="#home"><img class="logo"  src="./img/logolascano.png" alt="logo_Lascano"></a>
+                <ul class="navbar_content">
+                    <li class="navbar_item"><a class="navbar_link" href="#home">Home</a></li>
+                    <li class="navbar_item"><a class="navbar_link" href="#lascano">Dra. Lascano</a></li>
+                    <li class="navbar_item"><a class="navbar_link" href="#services">Servicios</a></li>
+                    <li class="navbar_item mr-0"><a class="navbar_link" href="#contacto">Servicios</a></li>
+                </ul>
             </div>
         </nav>
 
        <!-- Header img -->
        <div class="main_banner">
-        <img src="./img/fondoLascano.jpg" alt="main-image" class="main_banner-image">
+        <img src="./img/fondo_optimo.jpg" alt="main-image" class="main_banner-image">
             <div class="main_banner-content">
                 <h1 class="main_banner-title">Mercedes Lascano</h1>
                 <p class="main_banner-description text-uppercase">Abogada</p>
@@ -60,13 +62,14 @@
                     <span class="main_banner-parrafo">Confianza</span>
                 </div>
                 <button class="btn main_banner-boton">
-                    <a href="#" class="main_banner_boton-link" role="button">Iniciar un caso</a>
+                    <a href="#contacto" class="main_banner_boton-link" role="button">Iniciar un caso</a>
                 </button>
             </div>
        </div>
         
     </header>
 
+    
     <!-- seccion Frase -->
     <div class="frase_content">
         <div class="row frase_row">
@@ -84,7 +87,7 @@
     </div>
 
     <!-- Seccion Dra Lascano -->
-    <section class="lascano">
+    <section class="lascano" id="lascano">
         <div class="row lascano_row">
             <div class="col-11 content_lascano">
                 <div class="row content_title">
@@ -107,7 +110,7 @@
                                 La Dra. Lascano Mercedes hoy día,  lidera un capacitado equipo de trabajo compuesto por excelentes profesionales de distintas ramas. 
                                 </p>
                             <button class="btn lascano_btn">
-                                <a href="#" class="lascano_link" role="button">Contanos tu caso</a>
+                                <a href="#contacto" class="lascano_link" role="button">Contanos tu caso</a>
                             </button>
                         </div>
                     </div>
@@ -120,7 +123,7 @@
     </section>
 
     <!-- Services cards -->
-    <section class="services">
+    <section class="services" id="services">
         <div class="container">
                 <!-- Title -->
             <div class="row content_title">
@@ -132,9 +135,9 @@
                 <div class="col-12">
                     <div class="jumbotron">
                         <h1 class="display-4 jumbo_title">Especialistas en Derecho previsional!</h1>
-                        <p class="lead">Con más de 3.000 mil casos. Nuestra experiencia nos respalda.</p>
+                        <p class="lead">Nuestra experiencia nos respalda.</p>
                         <hr class="my-4">
-                        <p>Asesoramiento y determinación del derecho - Reconocimiento de servicios - Reajuste de haberes y mas..</p>
+                        <p>Asesoramiento y determinación del derecho (Jubilaciones y Pensiones, Servicios Diferenciales) (Clientes, Profesionales y empresas) - Reconocimiento de servicios - Reajuste de haberes.</p>
                         <a class="btn btn-lg services_btn" href="#" role="button">Leer más</a>
                     </div>
                 </div>
@@ -159,7 +162,7 @@
                             Desalojos<br>
                             Amparos de Salud
                             </p>
-                        <a href="#" class="btn lascano_btn">Contacto</a>
+                        <a href="#contacto" class="btn lascano_btn">Contacto</a>
                         </div>
                     </div>
                 </div>
@@ -179,7 +182,7 @@
                                 Reclamos ART<br>
                                 Asesoramiento jurídico a empresas
                             </p>
-                        <a href="#" class="btn lascano_btn">Contacto</a>
+                        <a href="#contacto" class="btn lascano_btn">Contacto</a>
                         </div>
                     </div>
                 </div>
@@ -195,9 +198,12 @@
                         <p class="card-text">
                                 Acuerdos <br>
                                 Alimentos <br>
-                                Régimenes de visita
+                                Régimenes de visita <br>
+                                Familia <br>
+                                Hogar <br>
+                                Derecho familiar
                             </p>
-                        <a href="#" class="btn lascano_btn">Contacto</a>
+                        <a href="#contacto" class="btn lascano_btn">Contacto</a>
                         </div>
                     </div>
                 </div>
@@ -218,7 +224,7 @@
                     </div>
                     <div class="col-12 col-md-4">
                         <button class="btn lascano_btn">
-                            <a href="#" class="call_link">Iniciar un caso</a>
+                            <a href="#contacto" class="call_link">Iniciar un caso</a>
                         </button>
                     </div>
                 </div>
@@ -233,7 +239,7 @@
         </div>
         <div class="row">
             <div class="col-12 d-flex flex-row justify-content-center">
-                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe4eEjNKsg4QdfQWtgKczyRhCXEbylklhBDen52ejMg1K8Z8g/viewform?embedded=true" width="640" height="1003" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdxhMYfJ4gPYp6JTASzPAOHtXrnCVxgcKggDoTs3vayX2NHrA/viewform?embedded=true" width="640" height="812" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
             </div>
         </div>
     </div>
@@ -241,8 +247,8 @@
     <!-- Map -->
     <div class="map">
         <div class="container map_content">
-            <div class="row">
-                <div class="col-12 mapWrapper">
+            <div class="row justify-content-center">
+                <div class="col-6 mapWrapper">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0437821455193!2d-58.38953638555242!3d-34.603054380459554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac6957d6e7b%3A0xa9de1567a54a175e!2sLavalle%201454%2C%20C1048%20AAJ%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1594587051227!5m2!1ses!2sar" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                 </div>
             </div>
@@ -252,22 +258,28 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="row footer_content">
-            <div class="col-4">
+            <div class="col-12 col-md-4">
                 <p class="footer_data">
-                    Lavalle 1454 1er Piso Ofic 65
-                    Ciudad Autonoma De Buenos Aires
-                    Celular: 11-67029262
-                    mail:  (CREAR UNO ESPECIFICO)
+                    Lavalle 1454 1er Piso Ofic 65 <br>
+                    Ciudad Autonoma De Buenos Aires <br>
+                    Celular: 11-67029262 <br>
+                    mail: lascano.estudiojuridico@gmail.com
                 </p>
             </div>
-            <div class="col-4">
+            <div class="col-12 text-center col-md-4">
                 logo
             </div>
-            <div class="col-4 footer_data">
-                Enlaces utiles
+            <div class="col-12 text-center col-md-4 footer_data">
+                <p class="footer_link"> Enlaces utiles:</p>
+                <a class="footer_link" href=" https://www.anses.gob.ar/" target="blank">Anses</a>
+                <a class="footer_link" href="http://afip.gov.ar/sitio/externos/default.asp" target="blank">Afip</a>
+                <a class="footer_link" href="https://www.boletinoficial.gob.ar/" target="blank">Boletin oficial</a>
+                <a class="footer_link" href="https://www.argentina.gob.ar/srt" target="blank">SRT</a>
             </div>
         </div>
     </footer>
 
+    <!-- Script JS -->
+    <script src="index.js"></script>
 </body>
 </html>
