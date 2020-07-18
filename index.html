@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mercedes Lascano">
+    <meta name="description" content="Estudio Jurídico especialista en derecho previsional y de la seguridad social">
+    <link rel="icon" href="">
     <title>Mercedes Lascano</title>
 
     <!-- Bootstrap CSS -->
@@ -38,7 +41,7 @@
         <!-- Navbar -->
         <nav class="header_navbar">
             <div class="container navbar_container">
-                <a href="#home"><img class="logo"  src="./img/logoascano.svg" alt="logo_Lascano"></a>
+                <a href="#home"><img class="logo"  src="./img/lascanologo.svg" alt="logo_Lascano"></a>
                 <ul class="navbar_content">
                     <li class="navbar_item"><a class="navbar_link" href="#home">Home</a></li>
                     <li class="navbar_item"><a class="navbar_link" href="#lascano">Dra. Lascano</a></li>
@@ -69,7 +72,6 @@
         
     </header>
 
-    
     <!-- seccion Frase -->
     <div class="frase_content">
         <div class="row frase_row">
@@ -138,10 +140,68 @@
                         <p class="lead">Nuestra experiencia nos respalda.</p>
                         <hr class="my-4">
                         <p>Asesoramiento y determinación del derecho (Jubilaciones y Pensiones, Servicios Diferenciales) (Clientes, Profesionales y empresas) - Reconocimiento de servicios - Reajuste de haberes.</p>
-                        <a class="btn btn-lg services_btn" href="#" role="button">Leer más</a>
+                        
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn services_btn mt-4" data-toggle="modal" data-target="#exampleModalScrollable">
+                            Leer más
+                        </button>
                     </div>
                 </div>
+            </div>           
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalScrollableTitle">Derecho Previsional</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body">
+                        <h6 class="text-uppercase">clientes</h6>
+                        <p><strong>ASESORAMIENTO Y DETERMINACION DEL DERECHO:</strong></p>
+                        <ul class="services_previsional">
+                            <li class="services_previsional-item">Jubilación (Leyes y/o Moratorias Vigentes / Caja IPS)</li>
+                            <li class="services_previsional-item">Jubilación Insalubre (Dctos. Diferenciales: Transporte, Construcción, Etc)</li>
+                            <li class="services_previsional-item">Pensión Directa /Derivada (Cónyuges o Concubinos)</li>
+                            <li class="services_previsional-item">Pensiones Leyes Especiales (Aplicación fallo pinto, / Ley 18038)</li>
+                            <li class="services_previsional-item">Retiro Transitorio por Invalidez</li>
+                            <li class="services_previsional-item">Ley de Minusvalía / Ley de Ceguera</li>
+                        </ul>
+                        <p class="m-0"><strong>RECONOCIMEINTO DE SERVICIOS </strong></p>
+                        <p class="m-0"><strong> REAJUSTE DE HABERES </strong></p>
+                        
+                        <hr>
+
+                        <h6 class="text-uppercase">profesionales</h6>
+                        <ul class="services_previsional">
+                            <li class="services_previsional-item">Liquidaciones SICAM (Personalizadas)</li>
+                            <li class="services_previsional-item">Determinación del Dcho. (Análisis de Caso en Particular)</li>
+                            <li class="services_previsional-item">Asesoramiento General Para inicio del beneficio (Determinación del Dcho. – Liquidación SICAM - Armado de Expediente)</li>
+                            <li class="services_previsional-item">Reconocimiento de Servicios</li>
+                        </ul>
+
+                        <hr>
+                        
+                        <h6 class="text-uppercase">empresas</h6>
+                        <ul class="services_previsional">
+                            <li class="services_previsional-item">Jubilaciones ( Leyes Vigentes) para empleados</li>
+                            <li class="services_previsional-item">Retiro Transitorio por Invalidez (RTI)</li>
+                            <li class="services_previsional-item">Asesoramiento Jurídico General</li>
+                        </ul>
+
+
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+                </div>
             </div>
+            <!-- fin Modal -->
+
             <!-- Cards -->
             <div class="row d-flex flex-wrap services_content-card">
                 <!-- Derecho civil -->
@@ -153,10 +213,10 @@
                         </div>
                     
                         <div class="card-body">
-                        <h5 class="card-title">Derecho Civil</h5>
+                        <h5 class="card-title">Derecho Civil/Comercial</h5>
                         <p class="card-text">
                             Sucesiones y tramitación de Venta <br>
-                            Divorcios (EXPRESS ¿?)<br>
+                            Divorcios<br>
                             Cobro de Ejecutivos<br>
                             Expensas<br>
                             Desalojos<br>
@@ -244,37 +304,30 @@
         </div>
     </div>
 
-    <!-- Map -->
-    <!-- <div class="map">
-        <div class="container map_content">
-            <div class="row justify-content-center">
-                <div class="col-6 mapWrapper">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0437821455193!2d-58.38953638555242!3d-34.603054380459554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac6957d6e7b%3A0xa9de1567a54a175e!2sLavalle%201454%2C%20C1048%20AAJ%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1594587051227!5m2!1ses!2sar" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                </div>
-            </div>
-        </div>
-    </div> -->
-
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="row footer_content">
-                <div class="col-12 col-md-4">
+
+                <div class="col-12 mb-4 col-lg-4 mb-lg-0 mapWrapper">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0437821455193!2d-58.38953638555242!3d-34.603054380459554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac6957d6e7b%3A0xa9de1567a54a175e!2sLavalle%201454%2C%20C1048%20AAJ%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1594587051227!5m2!1ses!2sar" width="600" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+
+                <div class="col-12 mb-4 col-lg-4 footer_data-container">
                     <p class="footer_data">
                         Lavalle 1454 1er Piso Ofic 65 <br>
                         Ciudad Autonoma De Buenos Aires <br>
-                        Celular: 11-67029262 <br>
-                        mail: lascano.estudiojuridico@gmail.com
+                        11-67029262 <br>
+                        lascano.estudiojuridico@gmail.com
+                        <a href="https://www.instagram.com/lascano.estudiojuridico/?hl=es-la" target="blank">
+                            <i class="fab fa-instagram icon_instagram"></i>
+                        </a>
                     </p>
+                  
                 </div>
-                <div class="col-12 col-md-4 mapWrapper">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0437821455193!2d-58.38953638555242!3d-34.603054380459554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac6957d6e7b%3A0xa9de1567a54a175e!2sLavalle%201454%2C%20C1048%20AAJ%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1594587051227!5m2!1ses!2sar" width="600" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                </div>
-                <!-- <div class="col-12 text-center col-md-4">
-                    logo
-                </div> -->
-                <div class="col-12 text-center col-md-4 footer_data">
-                    <p class="footer_link"> Enlaces utiles:</p>
+
+                <div class="col-12 text-center col-lg-4 footer_item">
+                    <p class="footer_link bb-0"> Enlaces utiles:</p>
                     <a class="footer_link" href=" https://www.anses.gob.ar/" target="blank">Anses</a>
                     <a class="footer_link" href="http://afip.gov.ar/sitio/externos/default.asp" target="blank">Afip</a>
                     <a class="footer_link" href="https://www.boletinoficial.gob.ar/" target="blank">Boletin oficial</a>
@@ -284,7 +337,28 @@
         </div>
     </footer>
 
+    <!-- Desarrollado por: -->
+    <div class="blue_prod">
+        <div class="container blue_prod-content">
+            <div class="row blue_container">
+                <div class="col-12 blue_content">
+                    <i class="far fa-copyright"></i>
+                    <p class="blue_item">Derechos reservados.</p>
+                    <p class="blue_item"><a href="https://produccionesblue.com" target="black" class="blue_link">Desarrollo: <u>Blue Producciones</u></a></p>
+                </div>
+                <!-- <div class="col-12 col-md-6 blue_content">
+                    <p class="blue_item">Desarrollado por: <a href="https://produccionesblue.com" target="black" class="blue_link text-uppercase"><u>Blue Producciones</u></a></p>
+                </div>       -->
+            </div>
+        </div>
+    </div>
+
     <!-- Script JS -->
     <script src="index.js"></script>
+
+    <!-- JS Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
