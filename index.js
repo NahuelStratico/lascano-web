@@ -1,5 +1,6 @@
 const hamburguer = document.querySelector('.hamburger');
 const menu = document.querySelector('.menu-navegacion');
+const btnBlock = document.getElementById('btn_block');
 
 hamburguer.addEventListener('click', () => {
    menu.classList.toggle('spread');
@@ -10,3 +11,4 @@ window.addEventListener('click', e=> {
         menu.classList.toggle('spread');
     }
 });
+

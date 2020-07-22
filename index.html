@@ -20,6 +20,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@400;500;700&family=Prata&display=swap" rel="stylesheet">
 </head>
 <body>
+
+    <a href="http://wa.me/5491167029262" class="whatsapp" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
     <!-- Header navbar and banner -->
     <header class="header" id="home">      
 
@@ -97,15 +99,19 @@
                     <span class="lascano_subtitle"></span>
                 </div>
                 <div class="row lascano_content-text">
-                    <div class="d-none d-md-block col-md-5 lascano_colum_image">
+                    <!-- Dra lascano image -->
+                    <div class="d-none d-lg-block col-lg-5 lascano_colum_image">
                         <div class=" lascano_content-image">
                             <img src="./img/lascano.jpg" alt="img contacto" class="lascano_image">
                         </div>
                     </div>
-                    <div class="col-12 col-md-7 lascano_container-content">
+                    <!-- Dra. Lascano text -->
+                    <div class="col-12 col-lg-7 lascano_container-content">
                         <div class="lascano_content-description">
                             <p class="lascano_description">
-                                La Dra. Mercedes  Lascano , en el transcurso de su formación académica ha sido contratada para asistir en el área de dirección de asuntos legales dentro de  importantes empresas multinacionales: entre ellas:  Sideco Americana, Ledesma, Techint, Ericsson  Telecomunicaciones, Asea Brown Boveri Estudio Jurídico Hector Kigel entre otros.
+
+                                    La Dra. Mercedes Lascano , en el transcurso de su formación académica ha sido contratada para asistir en el área de dirección de asuntos legales dentro de importantes empresas multinacionales: entre ellas: Sideco Americana, Ledesma, Techint, Ericsson Telecomunicaciones, Asea Brown Boveri (Área Licitaciones), Estudio Jurídico Hector Kigel entre otros.
+
                                 <br><br>
                                 Graduada desde hace 18 años  en la Universidad de Buenos Aires, se ha desempeñado  y especializado en su profesión de manera independiente como titular de su estudio, realizando capacitaciones constantes dentro del  área previsional, reajuste de haberes, jubilaciones y pensiones.
                                 <br><br>
@@ -135,16 +141,26 @@
             <!-- Jumbotron -->
             <div class="row justify-content-center">
                 <div class="col-12 ">
-                    <div class="jumbotron services_destacado">
-                        <h1 class="display-4 jumbo_title">Especialistas en Derecho previsional!</h1>
-                        <p class="lead">Nuestra experiencia nos respalda.</p>
+                    <div class="jumbotron services_destacado text-center">
+                        <h1 class="display-4 jumbo_title text-center">Especialistas en Derecho Previsional!</h1>
+                        <p class="lead text-center">Nuestra experiencia nos respalda.</p>
                         <hr class="my-4">
-                        <p>Asesoramiento y determinación del derecho (Jubilaciones y Pensiones, Servicios Diferenciales) (Clientes, Profesionales y empresas) - Reconocimiento de servicios - Reajuste de haberes.</p>
+                        <p class="text-center"> 
+                            <strong>
+                                Servicios para Clientes, Profesionales y Empresas <br>
+                                Jubilaciones y Pensiones (Moratorias Vigentes , Leyes Diferenciales) - Reconocimiento De Servicios - Reajuste de Haberes.
+                            </strong>
+                        </p>
                         
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn services_btn mt-4" data-toggle="modal" data-target="#exampleModalScrollable">
+                        <button type="button" class="btn btn-lg services_btn mt-4 mr-lg-3" data-toggle="modal" data-target="#exampleModalScrollable" id="btn_block">
                             Leer más
                         </button>
+                        <a href="#contacto">
+                            <button class="btn btn-lg  lascano_btn mt-4" >
+                                Consultanos
+                            </button>
+                        </a>
                     </div>
                 </div>
             </div>           
@@ -161,17 +177,31 @@
                     </div>
                     <div class="modal-body">
                         <h6 class="text-uppercase">clientes</h6>
-                        <p><strong>ASESORAMIENTO Y DETERMINACION DEL DERECHO:</strong></p>
+                        <p><strong>ASESORAMIENTO Y DETERMINACIÓN DEL DERECHO:</strong></p>
                         <ul class="services_previsional">
                             <li class="services_previsional-item">Jubilación (Leyes y/o Moratorias Vigentes / Caja IPS)</li>
                             <li class="services_previsional-item">Jubilación Insalubre (Dctos. Diferenciales: Transporte, Construcción, Etc)</li>
                             <li class="services_previsional-item">Pensión Directa /Derivada (Cónyuges o Concubinos)</li>
-                            <li class="services_previsional-item">Pensiones Leyes Especiales (Aplicación fallo pinto, / Ley 18038)</li>
+                            <li class="services_previsional-item">Pensiones Leyes Especiales (Aplicación fallos judiciales)</li>
                             <li class="services_previsional-item">Retiro Transitorio por Invalidez</li>
                             <li class="services_previsional-item">Ley de Minusvalía / Ley de Ceguera</li>
                         </ul>
-                        <p class="m-0"><strong>RECONOCIMEINTO DE SERVICIOS </strong></p>
+                        <p class="m-0"><strong>RECONOCIMIENTO DE SERVICIOS </strong></p>
+                        <ul class="services_previsional">
+                            <li class="services_previional-item">
+                                Armado de Expediente y presentación
+                            </li>
+                        </ul>
+                        
                         <p class="m-0"><strong> REAJUSTE DE HABERES </strong></p>
+                        <ul class="services_previsional">
+                            <li class="services_previional-item">
+                                Etapa Administrativa
+                            </li>
+                            <li class="services_previional-item">
+                                Etapa Judicial
+                            </li>
+                        </ul>
                         
                         <hr>
 
@@ -222,7 +252,7 @@
                             Desalojos<br>
                             Amparos de Salud
                             </p>
-                        <a href="#contacto" class="btn lascano_btn">Contacto</a>
+                        <a href="#contacto" class="btn btn-block lascano_btn" id="btn_block">Contacto</a>
                         </div>
                     </div>
                 </div>
@@ -240,9 +270,9 @@
                                 Mediaciones<br>
                                 Accidentes de trabajo<br>
                                 Reclamos ART<br>
-                                Asesoramiento jurídico a empresas
+                                Asesoramiento a empresas <br><br>
                             </p>
-                        <a href="#contacto" class="btn lascano_btn">Contacto</a>
+                        <a href="#contacto" class="btn  btn-block lascano_btn margin_contacto2" id="btn_block">Contacto</a>
                         </div>
                     </div>
                 </div>
@@ -254,16 +284,14 @@
                             <i class="fas fa-users services_icon"></i>
                         </div>
                         <div class="card-body">
-                        <h5 class="card-title">Derecho de familia</h5>
+                        <h5 class="card-title">Derecho de Familia</h5>
                         <p class="card-text">
                                 Acuerdos <br>
                                 Alimentos <br>
                                 Régimenes de visita <br>
-                                Familia <br>
-                                Hogar <br>
-                                Derecho familiar
+                                <br><br><br>
                             </p>
-                        <a href="#contacto" class="btn lascano_btn">Contacto</a>
+                        <a href="#contacto" class="btn  btn-block lascano_btn margen_contacto" id="btn_block">Contacto</a>
                         </div>
                     </div>
                 </div>
@@ -278,12 +306,17 @@
                 <div class=" row main_banner-content">
                     <div class="col-12 mb-4 col-md-8">
                         <h4 class="call_title">¿Necesitas un abogado?</h4>
-                        <p class="call_description">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dignissimos neque placeat facere minima recusandae molestias aliquid. Eligendi dolore vel deleniti expedita non dicta quisquam eum, sint earum provident esse.
+                        <p class="call_description text-center">
+                            Contamos con un equipo de profesionales altamente capacitados, dispuestos a asesorarte y ayudarte a resolver tus consultas.
                         </p>
                     </div>
-                    <div class="col-12 col-md-4">
+                    <div class="col-12 d-none d-lg-block col-md-4">
                         <button class="btn lascano_btn">
+                            <a href="#contacto" class="call_link">Iniciar un caso</a>
+                        </button>
+                    </div>
+                    <div class="col-12 d-block d-lg-none col-md-4">
+                        <button class="btn btn-block lascano_btn">
                             <a href="#contacto" class="call_link">Iniciar un caso</a>
                         </button>
                     </div>
@@ -313,13 +346,13 @@
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0437821455193!2d-58.38953638555242!3d-34.603054380459554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac6957d6e7b%3A0xa9de1567a54a175e!2sLavalle%201454%2C%20C1048%20AAJ%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1594587051227!5m2!1ses!2sar" width="600" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                 </div>
 
-                <div class="col-12 mb-4 col-lg-4 footer_data-container">
-                    <p class="footer_data">
-                        Lavalle 1454 1er Piso Ofic 65 <br>
+                <div class="col-12 col-lg-4 footer_data-container">
+                    <p class="footer_data text-left">
+                        Lavalle 1454 1er Piso - Of. 65  (Cuerpo 2) <br>
                         Ciudad Autonoma De Buenos Aires <br>
-                        11-67029262 <br>
+                        <a href="http://wa.me/5491167029262" target="blank" class="celular">11-67029262</a>
                         lascano.estudiojuridico@gmail.com
-                        <a href="https://www.instagram.com/lascano.estudiojuridico/?hl=es-la" target="blank">
+                        <a href="https://www.instagram.com/lascano.estudiojuridico/?hl=es-la" target="blank" class="text-center">
                             <i class="fab fa-instagram icon_instagram"></i>
                         </a>
                     </p>
